@@ -5,6 +5,7 @@
   "description": "Adaptation of BANG! The Dice Game board game",
   "main": "server.js",
   "scripts": {
+    "build": "echo build",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
