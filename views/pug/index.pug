@@ -1,0 +1,58 @@
+html
+  head
+    title BANG! The Dice Game
+    meta(name='description', content='Home page')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/public/style.css')
+  body
+    h1.center
+      img#img-logo(src='/public/images/bang_logo.png')
+    h2.center#pug-success-message THE DICE GAME! ONLINE!
+    
+    if showLogin
+      h2.center
+      form(id="login-form" action='/login', method='post', onsubmit="document.querySelector('#play-btn').disabled=true; ").center
+        div
+          input(type='text', id="play-input", name='username', placeholder="Name", autocomplete="off", pattern="[a-zA-Z0-9]*", maxlength="12", required)
+        div.hide
+          input(type='password', name='password', placeholder="Password", value=' ')
+        div
+          input(class='btn', id="play-btn", type='submit', value='Play')
+      p.center#pug-variable=message
+
+    if showCreateGame
+      h2.center
+      form(action='/create', method='post').center
+        div
+          input(class='btn', id="create-btn" type='submit', value='Create Game')
+        div
+          input(type="checkbox", id="allow", name="allow", value="allow")
+          label(for="allow", id="allow-label") Allow everyone to join
+      h2.center#join-form
+      form(action='/join-rand', method='post').center
+        div
+          input(class='btn', id="join-rand-btn", type='submit', value='Join Random Game')
+      form(action='/join-id', method='post').center
+        div
+          input(class='btn', id="join-id-btn", type='submit', value='Join Game with ID')
+        div
+          input(type='text', id="join-input", name='gameId', placeholder="Game ID", maxlength="4", pattern="[0-9]*", required)
+          p.center#pug-variable=message
+
+      h2.center#rules-form
+      form(action='/rules', method='post').center
+        div
+          input(class='btn', id="rules-btn", type='submit', value='How to Play')
+      
+      h2.center 
+      .logout.center
+        a(href='/logout').text Logout
+
+    div#copyright.center
+      footer#footer-1
+        small BANG! is a - registered – trademark of daVinci Editrice S.r.l.
+        div
+          small dV Giochi is a - registered – trademark of daVinci Editrice S.r.l. 
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="gusleak" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>

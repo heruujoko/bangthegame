@@ -1,0 +1,47 @@
+{
+  "name": "bang_dice_game_online",
+  "author": "ConstantParalia",
+  "version": "1.0.1",
+  "description": "Adaptation of BANG! The Dice Game board game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.1",
+    "express-session": "^1.15.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.6.5",
+    "node": "12.18.0",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0.0",
+    "passport.socketio": "^3.7.0",
+    "pug": "^3.0.0",
+    "socket.io": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gusleak/btdg_online.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "pug",
+    "passport",
+    "socketio"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "bugs": {
+    "url": "https://github.com/gusleak/btdg_online/issues"
+  },
+  "homepage": "https://github.com/gusleak/btdg_online#readme"
+}

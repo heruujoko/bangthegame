@@ -1,0 +1,365 @@
+#cont, html {
+  max-width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #a44200;
+  background-image: linear-gradient(315deg, #a44200 0%, #f2c17d 74%);
+}
+
+#img-logo {
+  width: 15em;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+#img-rules-logo {
+  width: 10vw;
+  margin: auto;
+  display: block;
+}
+
+#copyright {
+  margin-top: 4vh;
+  display: flexbox;
+  align-self: center;
+  justify-content: center;
+}
+
+#copyright-main {
+  display: flexbox;
+  align-self: flex-end;
+  justify-content: center;
+  font-size: 0.75vw;
+}
+
+@font-face {
+  font-family: 'Carnivalee Freakshow';
+  src: url('/public/fonts/CarnivaleeFreakshow.woff2') format('woff2'),
+      url('/public/fonts/CarnivaleeFreakshow.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cowboy Junior';
+    src: url('/public/fonts/CowboyJunior.woff2') format('woff2'),
+        url('/public/fonts/CowboyJunior.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+input[type=checkbox]
+{
+  width:1em;
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  padding: 1em;
+  margin-right: 1em;
+}
+
+#join-form, #rules-form {
+  margin-top: 4vh;
+}
+
+#room-id-text, #num-users {
+  font-family: 'Carnivalee Freakshow';
+}
+
+#room-id {
+  font-family: sans;
+}
+
+#announce-turn {
+  font-family: 'Carnivalee Freakshow';
+  font-size: x-large;
+  color:rgb(70, 23, 5);
+}
+
+#announce {
+  font-family: 'Cowboy Junior';
+}
+
+#pug-success-message {
+  font-family: 'Carnivalee Freakshow';
+  font-size: xx-large;
+}
+
+#pug-variable, #play-btn, #play-input, #create-btn, #join-input, #join-id-btn, #join-rand-btn, #rules-btn, #allow-label {
+  font-family: 'Cowboy Junior';
+  font-size: x-large;
+}
+
+.border {
+  border-style: inset;
+  border-width: 1px;
+  margin: 10px;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div > input {
+  margin: 0.5rem;
+}
+
+.login {
+  border: solid 2px #777;
+  width: 50%;
+  background-color: aliceblue;
+}
+
+a.text {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.game-form {
+  width: 24%;
+}
+
+form {
+  padding: 3px;
+  width: 400px;
+}
+
+form input {
+  background-color: rgb(145, 143, 143);
+  border: silver solid 2px;
+  padding: 10px; 
+  width: 70%; 
+  margin-right: 0.5%;
+}
+
+form button { 
+  width: 15%;
+  background: rgb(130, 224, 255);
+  border: none; 
+  padding: 10px; 
+}
+
+.btn {
+  font-family: sans;
+  background-color: rgb(85, 85, 85);
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(29, 29, 29);
+  cursor: pointer;
+}
+
+#rdy-btn, #roll-btn {
+  width: 100%;
+  font-size: 2vw;
+  font-family: 'Carnivalee Freakshow';
+}
+
+#start-btn {
+  background-color: rgb(102, 77, 14);
+  width: 100%;
+  font-size: 2vw;
+  font-family: 'Carnivalee Freakshow';
+}
+
+#reroll-btn, #end-turn-btn {
+  width: 80%;
+  font-size: 2vw;
+  font-family: 'Carnivalee Freakshow';
+}
+
+#main-body {
+  max-width: 100%;
+  height: auto;
+}
+
+#messages {
+  width: 24%;
+  font-family: sans-serif;
+  list-style-type: none;
+  text-align: left;
+  min-height: 50vh;
+  max-height: 50vh;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  float: left;
+  font-size: 1.1vw;
+}
+
+#messages li { 
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) { 
+  background: rgb(194, 162, 103);
+}
+
+#messages li:nth-child(even) { 
+  background: rgb(211, 170, 93);
+}
+
+#m {
+  font-family: sans-serif;
+  background-color: rgb(250, 232, 198);;
+  width: 80%;
+  font-size: 1.1vw;
+}
+
+.board {
+  background-image: url('/public/images/far_west_bg.png');
+  background-size: 100% 100%;
+  float: right;
+  min-height: 50vh;
+  width: 75%;
+  max-width: 75%;
+  height: auto;
+  border-radius: 15px;
+}
+
+#dice-area, #arrow-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pos-border {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 4px 4px 6px 4px #000000;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 3vh;
+  height: 15vh;
+  border-radius: 25px;
+  font-family: 'Cowboy Junior';
+  font-size: 1.2vw;
+  font-weight: bolder;
+  color:white;
+}
+
+.pos-health {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+}
+
+.pos-arrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  font-size: x-large;
+  font-weight: bolder;
+  color: black;
+}
+
+.img-bullet, .img-arrow {
+  width: 1vw;
+}
+
+.pos-border-rdy {
+  border: 2px solid lightgreen;
+  box-shadow: 4px 4px 6px 4px lightgreen;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 3vh;
+  height: 15vh;
+  border-radius: 25px;
+  font-family: 'Cowboy Junior';
+  font-size: 1.2vw;
+  font-weight: bolder;
+  color:white;
+}
+
+.pos-border-sheriff {
+  border: 2px solid rgb(158, 160, 42);
+  box-shadow: 4px 4px 6px 4px #000000;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 3vh;
+  height: 15vh;
+  border-radius: 25px;
+  font-family: 'Cowboy Junior';
+  font-size: 1.2vw;
+  font-weight: bolder;
+  color:white;
+}
+
+.pos-border-dead {
+  border: 2px solid rgb(0, 0, 0);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  max-width: 3vh;
+  height: 15vh;
+  border-radius: 25px;
+  font-family: 'Cowboy Junior';
+  font-size: 1.2vw;
+  font-weight: bolder;
+  color:white;
+}
+
+#application {
+  right: 375px;
+  bottom: 215px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.dice {
+  width: 3vw;
+}
+
+.dice:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
+
+.select {
+  border: 3px solid rgb(64, 212, 121);
+}
+
+.shade {
+  box-shadow: 4px 4px 6px 4px #c5c33c;
+}
+
+.blur {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#rules-link, #rules-back {
+  color: black;
+}
+
+#rules-link:hover, #rules-back:hover {
+  color: rgb(46, 44, 44);
+}
