@@ -1,3 +1,0 @@
-SESSION_SECRET='bangbangtut'
-MONGO_URI='mongodb+srv://user:pass@mongodb.net/?retryWrites=true&w=majority'
-PORT=3000
